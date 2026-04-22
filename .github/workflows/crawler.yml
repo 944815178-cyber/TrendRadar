@@ -37,11 +37,8 @@ on:
     #
     - cron: "30 * * * *"
 
-  workflow_dispatch:
 
-concurrency:
-  group: crawler-${{ github.ref_name }}
-  cancel-in-progress: true
+
 
 permissions:
   contents: read
